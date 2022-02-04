@@ -1,0 +1,18 @@
+BITS Corporation Exercises QBE: 4, 5, 10
+BITS Corporation Exercises Relational Algebra: None
+Colonial Adventure Tours Case: 3, 4
+Sports Physical Therapy Case: 8
+
+
+BITS Corporation Exercises QBE: 8, 9, 11 - 13
+o	For #13) Use this wording instead of the book:
+List all categories and the sum of Price for each category in the Tasks table. Group the results by category.
+BITS Corporation Exercises Relational Algebra: None
+Colonial Adventure Tours Case: 5, 7, 9, 10
+o	#5 Hint: Use the Count function and Where. The answer should be a single row with a number, not two rows for Hiking and Biking counts.
+o	#10 Hint: Similar to #5, the answer should be a single row with a number, not a row for each price.
+Sports Physical Therapy Case: 7, 13
+
+AMEX ^3[47][0-9]{13}$
+VISA ^4[0-9]{12}$|^4[0-9]{16}$
+^5[1-6]\d{14}$|222[1-9]\d{12}$|2720\d{12}$
