@@ -1,0 +1,80 @@
+
+~ Perl Assignment 03 ~
+
+    Objectives
+        To get practice in using Perl file handles, program arguments, and regular expressions.
+        Create a perl script that will read in a text file of possible credit card numbers and attempt to categorize them to major credit card networks: American Express (Amex), Visa, Mastercard
+    Perl Program 03
+        Download the text file cc_numbers.txt and ensure it is in the same folder you will be using for this assignment.
+            Right-click on the link above and Save link as to download the file.
+        Open the text file in Atom to familiarize yourself with its contents. Each line in the file is a possible credit card number that may or may not follow the pattern of one of the major credit card networks.
+        Create a perl script named LastnameFirstname03.pl.
+            Ensure that cc_numbers.txt and LastnameFirstname03.pl are in the same folder.
+        Include strict and warnings at the top of your script.
+        When running this script, exactly 1 program argument is expected. The program argument will be the name of a file the script will read in.
+        To ensure there is exactly 1 program argument, implement a program argument check. Terminate the script with an appropriate error and usage message if there is not exactly 1 program argument.
+            See the error and usage messages in the Example Outputs on the bottom. You may adapt the error and usage messages for your own scripts.
+        Retrieve the file name from the program argument array and store it in a scalar variable. You can use array index notation, shift, or pop to retrieve the file name from the program argument array.
+        Open a file handle to read the file using the file name that was retrieved from the program argument array.
+            Do NOT hard-code the file name cc_numbers.txt in the script. The script should attempt to open a file handle using the file name that was entered as a program argument. The file name cc_numbers.txt should not appear anywhere in the script.
+        Read through each possible credit card number in the file. Each number is on its own line, therefore read the file line by line.
+            At this point, you may want to print each line in the file as it is being read to make sure the script is actually reading the file.
+        Below are the characteristics for each network's credit card number pattern. Note that this is not an exhaustive list of each pattern, but these are the ones you will be implementing in the script.
+            American Express
+                A number that starts with 34 or 37, followed by 13 digits.
+            Visa
+                A number that starts with 4, followed by 12 digits.
+                A number that starts with 4, followed by 16 digits.
+            Mastercard
+                A number that starts with 5, followed by 1 through 6, followed by 14 digits.
+                A number that starts with 222, followed by 1 through 9, followed by 12 digits.
+                A number that starts with 2720, followed by 12 digits.
+        For each description, create a regex pattern. Some descriptions can be combined into a single regex or expressed separately. For example, American Express descriptions can be expressed in one regex pattern or two, it will be up to you how you want to express the pattern. You should have around 6 patterns total. For all regex patterns, do not allow garbage at the beginning or ending of the number. In other words, only the pattern should match.
+        While the script is reading line by line, apply each pattern to determine what kind of credit card number it is. You can use a series of if-statements or elsif. When a number matches a pattern, print the name of the network in all uppercase, followed a colon :, a space, then the number. Only print numbers that match. Numbers that do not match will not have any output.
+        Close all file handles used in the script.
+        See Example Output for the expected output of your script.
+        Ensure that your code is sufficiently styled and documented.
+            Styled meaning code is indented, variables are named properly, etc.
+            Documentation includes a program description at the top and in-line comments.
+            See posted examples in the Lecture Material page.
+    Extra Credit (Up to 1.25 points)
+        (+0.25) Modify the open statement so that if the file handle could not be opened, terminate the script with an error message. Use the open-or-die setup shown in the extra example file_io_read_line_extra.pl.
+            An example run should look like this:
+            > perl MeyerEdward03.pl pew
+            Unable to open file: pew
+        (+1.0) In addition to printing the numbers, also write them out to a text file named matched_cc_numbers.txt on separate lines. Have the script overwrite matched_cc_numbers.txt each time the script is run, i.e. do not append.
+    Example Outputs
+
+    > perl MeyerEdward03.pl
+    Error: Expecting 1 program argument. Found 0 instead.
+    Usage: perl MeyerEdward03.pl filename
+
+    > perl MeyerEdward03.pl 1 2 3 4
+    Error: Expecting 1 program argument. Found 4 instead.
+    Usage: perl MeyerEdward03.pl filename
+
+    > perl MeyerEdward03.pl cc_numbers.txt
+    AMEX: 374957991156897
+    MASTERCARD: 2720649587451369
+    VISA: 44010400919987200
+    MASTERCARD: 2223405693062581
+    AMEX: 345911586431914
+    MASTERCARD: 5513658978452165
+    MASTERCARD: 2222222222222222
+    VISA: 4654511991978
+    MASTERCARD: 5605630148793205
+    AMEX: 349876451326598
+    MASTERCARD: 2720603410587520
+    MASTERCARD: 2720659845124569
+    VISA: 4678956214875
+
+    Program done.
+
+    Hints
+        My solution without any comments was 40 lines of code - exact number of lines may differ depending on your own approach.
+        My extra credit solution without any comments was 49 lines of code.
+        Use regex101.com to test your regex pattern. Paste the contents of cc_numbers.txt in the test string area. Note that regex101.com has the g and m flags on by default, but you will not be using those flags when you implement the pattern in your script.
+    Submission Guidelines
+        Submit your script to the Digital Dropbox.
+            Be sure to check your hawaii.edu e-mail for confirmation of your submission.
+        Due Date: Tuesday, Feb. 8 by 11:55pm

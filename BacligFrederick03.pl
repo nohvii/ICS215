@@ -19,10 +19,18 @@ open inFH, "<", $inputFile;
 # As long as the file has lines, store it in $inputLine, then print it out.
 while ($inputLine = <inFH>) {
   # Any processing to the line will occur here in the loop.
-  push(@ccArray,$inputLine);
+  if($inputLine=~m/^3[47][0-9]{13}$/){
+    push(@ccArray,"AMEX: $inputLine");
+  }
+  elsif($inputLine=~m/^4[0-9]{12}$|^4[0-9]{16}$/){
+    push(@ccArray,"VISA: $inputLine");
+  }
+  elsif($inputLine=~m/^5[1-6]\d{14}$|222[1-9]\d{12}$|2720\d{12}$/){
+    push(@ccArray,"MASTERCARD: $inputLine");
+  }
 }
 
 # Done reading.
 close inFH;
 my $arrayLength = @ccArray;
-print $arrayLength;
+print @ccArray;
