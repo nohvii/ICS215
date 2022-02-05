@@ -6,8 +6,10 @@ use warnings;
 # Program arguments, arrays, and subroutines
 # ICS 215
 # Author: Fred Baclig
-
-my $inputFile = "cc_numbers.txt";
+my $dieMsg = "Error: Expecting 1 program argument. Found " . @ARGV . " instead.\n";
+$dieMsg = $dieMsg . "Usage: perl BacligFrederick03.pl filename\n";
+die "$dieMsg" if (@ARGV != 1);
+my $inputFile = $ARGV[0];
 my @ccArray="";
 
 # Used to temporarily store each line in the file as it is being read.
@@ -33,4 +35,4 @@ while ($inputLine = <inFH>) {
 # Done reading.
 close inFH;
 my $arrayLength = @ccArray;
-print @ccArray;
+print @ccArray
