@@ -34,3 +34,7 @@ while ($inputLine = <inFH>) {
 close inFH;
 my $arrayLength = @ccArray;
 print @ccArray;
+while ($inputLine = <inFH>) {
+  # Any processing to the line will occur here in the loop.
+  print $inputLine;
+}

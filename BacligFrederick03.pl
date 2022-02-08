@@ -3,7 +3,8 @@ use warnings;
 
 # Perl Assignment 3
 #
-# perl script that will read in a text file of possible credit card numbers 
+# perl script that will read in a text file(passed
+# as a argument) of possible credit card numbers 
 # and attempt to categorize them to major credit card networks: 
 # American Express (Amex), Visa, Mastercard
 #
@@ -13,9 +14,11 @@ use warnings;
 
 # die message to notify user they entered the incorrect amount of arguments.
 my $dieMsg = "Error: Expecting 1 program argument. Found " . @ARGV . " instead.\n";
-# exits script if user does not enter exactly 1 argument
 $dieMsg = $dieMsg . "Usage: perl BacligFrederick03.pl filename\n";
+
+# exits script if user does not enter exactly 1 argument
 die "$dieMsg" if (@ARGV != 1);
+
 # store filename passed as a argument into variable
 my $inputFile = $ARGV[0];
 # name of file we will be writing the matched CC's too
