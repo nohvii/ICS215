@@ -1,161 +1,60 @@
 use strict;
 use warnings;
 
+# Perl Assignment 4
+#
+# Using regular expression to capture data on a given webpage. The webpage is an archive of the Spring
+# 2022 ICS Class Availability webpage. This perl scrip will output the sum total of available seats, 
+# across all sections, for a given Leeward ICS course by applying a regex to capture seats available 
+#information. When the user runs this script, they will provide a course number as a program argument, 
+# the script will then read the webpage, apply a regex, and add up all the seats available for that course
+# and output the result.
+#
+# Author: Frederick Baclig
+#
+# file we will be opening and processing
+my $myFile = "sp22_ics_availability.html";
 
-my $forecast="td CLASS=\"default\"><a href=\"./avail.class?i=LEE&t=202230&c=55179\">55179</a></td>
-<td nowrap=\"nowrap\" CLASS=\"default\">ICS 101</td>
-<td CLASS=\"default\">0</td>
-<!-- ssrmeet_array_length = 0 -->
-<!-- ssrmeet_array_length = 1 -->
-<!-- comment_text=Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br> -->
-<td CLASS=\"default\">Digital Tools for Info World</td>
-<td CLASS=\"default\">3</td>
-<td CLASS=\"default\"><abbr title=\"Matthew C French\"><span class=\"abbr\" title=\"Matthew C French\">M C French</span></abbr></td>
-<td class=\"default\" align=\"center\">20</td>
-<td class=\"default\" align=\"center\">0</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\"><abbr title=\"World Wide Web \"><span class=\"abbr\" title=\"World Wide Web \">WWW </span></abbr></td>
-<td CLASS=\"default\">01/10-05/13</td>
-</tr>
-<tr class=\"odd\">
-<td colspan=\"13\">
-Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>
-</td>
-</tr>
-<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55207', ssrmeet: '55207' -->
-<!-- pt. a -->
-<!-- pt. b -->
-<!-- pt. c -->
-<!-- pt. d -->
-<!-- pt. e -->
-<!-- pt. f -->
-<!-- pt. g -->
-<tr>
-<td CLASS=\"default\">C19,TXT0</td>
-<!-- pt. h -->
-<td CLASS=\"default\"><a href=\"./avail.class?i=LEE&t=202230&c=55207\">55207</a></td>
-<td nowrap=\"nowrap\" CLASS=\"default\">ICS 101</td>
-<td CLASS=\"default\">0</td>
-<!-- ssrmeet_array_length = 0 -->
-<!-- ssrmeet_array_length = 1 -->
-<!-- comment_text=Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br> -->
-<td CLASS=\"default\">Digital Tools for Info World</td>
-<td CLASS=\"default\">3</td>
-<td CLASS=\"default\"><abbr title=\"Norman Hines\"><span class=\"abbr\" title=\"Norman Hines\">N Hines</span></abbr></td>
-<td class=\"default\" align=\"center\">19</td>
-<td class=\"default\" align=\"center\">1</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\"><abbr title=\"World Wide Web \"><span class=\"abbr\" title=\"World Wide Web \">WWW </span></abbr></td>
-<td CLASS=\"default\">01/10-05/13</td>
-</tr>
-<tr>
-<td colspan=\"13\">
-Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>
-</td>
-</tr>
-<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55354', ssrmeet: '55354' -->
-<!-- pt. a -->
-<!-- pt. b -->
-<!-- pt. c -->
-<!-- pt. d -->
-<!-- pt. e -->
-<!-- pt. f -->
-<!-- pt. g -->
-<tr class=\"odd\">
-<td CLASS=\"default\">C19,TXT0</td>
-<!-- pt. h -->
-<td CLASS=\"default\"><a href=\"./avail.class?i=LEE&t=202230&c=55354\">55354</a></td>
-<td nowrap=\"nowrap\" CLASS=\"default\">ICS 101</td>
-<td CLASS=\"default\">0</td>
-<!-- ssrmeet_array_length = 0 -->
-<!-- ssrmeet_array_length = 1 -->
-<!-- comment_text=Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br> -->
-<td CLASS=\"default\">Digital Tools for Info World</td>
-<td CLASS=\"default\">3</td>
-<td CLASS=\"default\"><abbr title=\"Thomas D Burns\"><span class=\"abbr\" title=\"Thomas D Burns\">T D Burns</span></abbr></td>
-<td class=\"default\" align=\"center\">20</td>
-<td class=\"default\" align=\"center\">0</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\"><abbr title=\"World Wide Web \"><span class=\"abbr\" title=\"World Wide Web \">WWW </span></abbr></td>
-<td CLASS=\"default\">01/10-05/13</td>
-</tr>
-<tr class=\"odd\">
-<td colspan=\"13\">
-Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br>
-</td>
-</tr>
-<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55632', ssrmeet: '55632' -->
-<!-- pt. a -->
-<!-- pt. b -->
-<!-- pt. c -->
-<!-- pt. d -->
-<!-- pt. e -->
-<!-- pt. f -->
-<!-- pt. g -->
-<tr>
-<td CLASS=\"default\">C19,TXT0</td>
-<!-- pt. h -->
-<td CLASS=\"default\"><a href=\"./avail.class?i=LEE&t=202230&c=55632\">55632</a></td>
-<td nowrap=\"nowrap\" CLASS=\"default\">ICS 101</td>
-<td CLASS=\"default\">0</td>
-<!-- ssrmeet_array_length = 0 -->
-<!-- ssrmeet_array_length = 1 -->
-<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download. The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br> -->
-<td CLASS=\"default\">Digital Tools for Info World</td>
-<td CLASS=\"default\">3</td>
-<td CLASS=\"default\"><abbr title=\"Norman Hines\"><span class=\"abbr\" title=\"Norman Hines\">N Hines</span></abbr></td>
-<td class=\"default\" align=\"center\">18</td>
-<td class=\"default\" align=\"center\">2</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\"><abbr title=\"World Wide Web \"><span class=\"abbr\" title=\"World Wide Web \">WWW </span></abbr></td>
-<td CLASS=\"default\">01/10-05/13</td>
-</tr>
-<tr>
-<td colspan=\"13\">
-Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download. The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>
-</td>
-</tr>
-<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55975', ssrmeet: '55975' -->
-<!-- pt. a -->
-<!-- pt. b -->
-<!-- pt. c -->
-<!-- pt. d -->
-<!-- pt. e -->
-<!-- pt. f -->
-<!-- pt. g -->
-<tr class=\"odd\">
-<td CLASS=\"default\">TXT0</td>
-<!-- pt. h -->
-<td CLASS=\"default\"><a href=\"./avail.class?i=LEE&t=202230&c=55975\">55975</a></td>
-<td nowrap=\"nowrap\" CLASS=\"default\">ICS 101</td>
-<td CLASS=\"default\">0</td>
-<!-- ssrmeet_array_length = 0 -->
-<!-- ssrmeet_array_length = 1 -->
-<!-- comment_text=Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br> -->
-<td CLASS=\"default\">Digital Tools for Info World</td>
-<td CLASS=\"default\">3</td>
-<td CLASS=\"default\"><abbr title=\"Courtney N Kinder\"><span class=\"abbr\" title=\"Courtney N Kinder\">C N Kinder</span></abbr></td>
-<td class=\"default\" align=\"center\">19</td>
-<td class=\"default\" align=\"center\">1</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\">TBA</td>
-<td CLASS=\"default\"><abbr title=\"World Wide Web \"><span class=\"abbr\" title=\"World Wide Web \">WWW </span></abbr></td>
-<td CLASS=\"default\">01/10-05/13</td>
-</tr>
-<tr class=\"odd\">
-<td colspan=\"13\">
-Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br>
-</td>
-</tr>";
-my $theClass="101";
-#if ($forecast=~m#<td nowrap=\"nowrap\" CLASS=\"default\">ICS\s(\d\d\d)</td#){
-# print "found $1";
-#}
+# variable we will be using to keep a running total
+# of available seats
+my $seatsTotal = 0;
 
-while($forecast=~m#101<\/td>.+?<td class=\"default\" align=\"center\">\d{1,2}.+?<td class+=\"default\" align=\"center\">(\d{1,2})#gs){
-  print "$1 \n";
+# terminates the script if the user does not enter exactly 1 argument
+die "Error: Expecting 1 program argument, found " . @ARGV . " instead.\nUsage: Perl BacligFrederick04.pl course_number\n" if (@ARGV != 1);
+
+# continutes the script and stores the argument into a variable
+# we will use to match a specific course number
+my $courseArg = $ARGV[0];
+
+# Undefine the record separator variable to grab the entire contents
+# of the file when using the line-input operator <>
+local $/;
+
+# attempts to open the file, will terminate if file is not found 
+# or can't be opened
+open inFH, "<", $myFile or die "Unable to open sp22_ics_availability.html\n";
+
+# stores the contents of the file into $fileContents
+my $fileContents=<inFH>;
+
+# done reading the file
+close inFH;
+
+# reinitialize the newline
+$/ = "\n";
+
+# terminate the script if no matches are found
+die "No courses matched.\n" if ($fileContents !~ m#<td nowrap=\"nowrap\" CLASS=\"default\">ICS\s$courseArg</td>#);
+
+# script will continue running if a match was found
+# The while loop implemented here to iterate through file matching the regex 
+# for seats available
+# G and S flags are used for matching the contents of the file
+while ($fileContents =~ m#$courseArg<\/td>.+?<td class=\"default\" align=\"center\">\d{1,2}.+?<td class+=\"default\" align=\"center\">(\d{1,2})#gs){
+  # Running total of seats available for each course
+  $seatsTotal = $seatsTotal + $1;
 }
+
+# Print the seats total available for the course
+print "$seatsTotal\n\n";
+print "Program Done";

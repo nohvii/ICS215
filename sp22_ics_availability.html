@@ -1,0 +1,2271 @@
+<html>
+<!-- OWA_CACHE will timeout in 10 minutes. -->
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" title="Default text size" href="https://www.hawaii.edu/myuh/availcss/availLEE.css">
+<title>Leeward Community College - Spring 2022 - ICS</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+function UpdateTableHeaders() {
+$("div.divListOfClasses").each(function() {
+var originalHeaderRow = $(".tableFloatingHeaderOriginal", this);
+var floatingHeaderRow = $(".tableFloatingHeader", this);
+var offset = $(this).offset();
+var scrollTop = $(window).scrollTop();
+if ((scrollTop > offset.top) && (scrollTop < offset.top + $(this).height())) {
+floatingHeaderRow.css("visibility", "visible");
+floatingHeaderRow.css("top", Math.min(scrollTop - offset.top, $(this).height() - floatingHeaderRow.height()) + "px");
+$("th", floatingHeaderRow).each(function(index) {
+var cellWidth = $("th", originalHeaderRow).eq(index).css('width');
+$(this).css('width', cellWidth);
+});
+floatingHeaderRow.css("width", $(this).css("width"));
+}
+else {
+floatingHeaderRow.css("visibility", "hidden");
+floatingHeaderRow.css("top", "0px");
+}
+});
+}
+$(document).ready(function() {
+$("table.listOfClasses").each(function() {
+$(this).wrap("<div class=\"divListOfClasses\" style=\"position:relative\"></div>");
+var originalHeaderRow = $("tr:first", this)
+originalHeaderRow.before(originalHeaderRow.clone());
+var clonedHeaderRow = $("tr:first", this)
+clonedHeaderRow.addClass("tableFloatingHeader");
+clonedHeaderRow.css("position", "absolute");
+clonedHeaderRow.css("top", "0px");
+clonedHeaderRow.css("left", $(this).css("margin-left"));
+clonedHeaderRow.css("visibility", "hidden");
+originalHeaderRow.addClass("tableFloatingHeaderOriginal");
+});
+UpdateTableHeaders();
+$(window).scroll(UpdateTableHeaders);
+$(window).resize(UpdateTableHeaders);
+});
+</script>
+</head>
+<!-- uh_avail_style_rec is not null -->
+<!-- uh_avail_style_rec.term_code = 201010 -->
+<!-- uh_avail_style_rec.style = B -->
+<body>
+<div class="header">
+<p class="system">
+<a href="./avail.classes" class=system_link>University of Hawaii</a>
+<a href="https://hawaii-leeward.verbacompare.com/" target="_blank" class=book_link,
+                             style="color: white; text-decoration: none; float: right">Textbooks/Course Materials</a>
+</p>
+<p class="institution">
+<a href="./avail.classes?i=LEE" class=title_link>Leeward Community College</a>
+&#149;
+Spring 2022 Class Availability
+</p>
+<p class="transfer-info">
+<a href="http://www.hawaii.edu/admissions/transfers.html">(UH Transfer Information)</a>
+</p>
+</div>
+<div class="header2">
+<p class="backlink">
+<a href="./avail.classes?i=LEE&t=202230">Back to list of subjects</a>
+<b><big>&nbsp;&nbsp;Click on the CRN for additional class information.</big></b>
+</p>
+</div> <!-- header2 -->
+<h1>Information& Computer Sciences (ICS)</h1>
+<!-- f_listcrse called for i: 'LEE t: '202230' -->
+<!-- uh_avail_inst_rec.inst_desc: 'Leeward Community College' -->
+<!-- SCRIPT_NAME: /uhdad -->
+<!-- PATH_INFO: /avail.classes -->
+<!-- VPDI DUMP -->
+<!-- session_user: WWW_USER -->
+<!-- sessionid: 144378730 -->
+<!-- type_context: U1 -->
+<!-- code_context: ALLQ -->
+<!-- lmod_context:  -->
+<!-- inst_code: MAN -->
+<!-- multi_context: OVERRIDE -->
+<!-- proc_context: LEE -->
+<!-- hierarchy_context: RESTRICT -->
+<!-- primary_context:  -->
+<!-- secondary_context:  -->
+<!-- current_inst_code: MAN -->
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55007', ssrmeet: '55007' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<table class="listOfClasses" border="0" cellpadding="2" cellspacing="0" width="100%">
+<!-- pt. f -->
+<!-- uh_avail_inst_rec.show_enrl = Y -->
+<thead>
+<tr style="background:#D4D4D4;">
+    <th><abbr title="Requirements & Designation Codes (see legend below)">GenEd/Focus/<br>Special Des.</abbr></th>
+    <th>CRN</th>
+    <th>Course</th>
+    <th>Section</th>
+    <th>Title</th>
+    <th>Credits</th>
+    <th>Instructor</th>
+    <th><abbr title="Currently Enrolled">Curr.<br />Enrolled</abbr></th>
+    <th><abbr title="Number of seats still available">Seats<br />avail.</abbr></th>
+    <th>Days</th>
+    <th>Time</th>
+    <th>Room</th>
+    <th>Dates</th>
+</tr>
+</thead>
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55007">55007</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 100</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Students will be contacted by their instructor by UH email before the first day of instruction.<br><br>This section of ICS 100 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $97.05 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp -->
+<td CLASS="default">Computing Literacy & Apps</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Norman Hines"><span class="abbr" title="Norman Hines">N Hines</span></abbr></td>
+<td class="default" align="center">14</td>
+<td class="default" align="center">6</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Students will be contacted by their instructor by UH email before the first day of instruction.<br><br>This section of ICS 100 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $97.05 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55008', ssrmeet: '55008' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55008">55008</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br> -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Stephen P Tercino"><span class="abbr" title="Stephen P Tercino">S P Tercino</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55179', ssrmeet: '55179' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55179">55179</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br> -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Matthew C French"><span class="abbr" title="Matthew C French">M C French</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55207', ssrmeet: '55207' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55207">55207</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br> -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Norman Hines"><span class="abbr" title="Norman Hines">N Hines</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55354', ssrmeet: '55354' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55354">55354</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br> -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Thomas D Burns"><span class="abbr" title="Thomas D Burns">T D Burns</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55632', ssrmeet: '55632' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55632">55632</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download. The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br> -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Norman Hines"><span class="abbr" title="Norman Hines">N Hines</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download. The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55975', ssrmeet: '55975' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55975">55975</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br> -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Courtney N Kinder"><span class="abbr" title="Courtney N Kinder">C N Kinder</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>Students must use Microsoft Applications designed to run on the Windows or Mac Operating System which is available for a free download.  The online version of Microsoft Applications is not sufficient for this course.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56094', ssrmeet: '56094' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">ONL5</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56094">56094</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=<b>ACCELERATED CLASS: THIS IS A 5-WEEK COURSE THAT BEGINS ON 02/14/22 AND ENDS ON 3/24/22.</b> This course is restricted to students in the AA Online Program. Any unused seats in this section will be available (in a different CRN) on 12/17/21. -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">5</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">02/14-03/24</td>
+</tr>
+<tr>
+<td colspan="13">
+<b>ACCELERATED CLASS: THIS IS A 5-WEEK COURSE THAT BEGINS ON 02/14/22 AND ENDS ON 3/24/22.</b> This course is restricted to students in the AA Online Program. Any unused seats in this section will be available (in a different CRN) on 12/17/21.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56095', ssrmeet: '56095' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">ONLD</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56095">56095</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 101</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=<b>ACCELERATED CLASS: THIS IS A 5-WEEK COURSE THAT BEGINS ON 02/14/22 AND ENDS ON 3/24/22.</b> -->
+<td CLASS="default">Digital Tools for Info World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">02/14-03/24</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+<b>ACCELERATED CLASS: THIS IS A 5-WEEK COURSE THAT BEGINS ON 02/14/22 AND ENDS ON 3/24/22.</b>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55251', ssrmeet: '55251' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55251">55251</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 110M</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>Recommended preparation: ICS 100 or ICS 101.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. -->
+<td CLASS="default">Intro To Programming</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Alejandro A Ramos"><span class="abbr" title="Alejandro A Ramos">A A Ramos</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">W</td>
+<td nowrap="nowrap" CLASS="default">1030-<spacer />1145a</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>Recommended preparation: ICS 100 or ICS 101.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55367', ssrmeet: '55367' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55367">55367</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 110P</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Programming</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Nikki D Manuel"><span class="abbr" title="Nikki D Manuel">N D Manuel</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55368', ssrmeet: '55368' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55368">55368</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 110P</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Programming</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Nikki D Manuel"><span class="abbr" title="Nikki D Manuel">N D Manuel</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55520', ssrmeet: '55520' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55520">55520</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 110P</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- ssrmeet_array_length = 2 -->
+<!-- comment_text=Textbook Cost: $0<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class.<br><br>This class is scheduled to meet face-to-face on these dates: Jan 13, March 10, and May 5. -->
+<td CLASS="default">Introduction to Programming</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">6</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">W</td>
+<td nowrap="nowrap" CLASS="default">0900-<spacer />1015a</td>
+<td CLASS="default"><abbr title="Biological Science Classroom 105"><span class="abbr" title="Biological Science Classroom 105">BS 105</span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class.<br><br>This class is scheduled to meet face-to-face on these dates: Jan 13, March 10, and May 5.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55520', ssrmeet: '55520' -->
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56228', ssrmeet: '56228' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56228">56228</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 110P</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Programming</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">12</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0<br>Recommended preparation: ICS 100 or ICS 101.<br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55009', ssrmeet: '55009' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55009">55009</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 111</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Nikki D Manuel"><span class="abbr" title="Nikki D Manuel">N D Manuel</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55010', ssrmeet: '55010' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55010">55010</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 111</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Nikki D Manuel"><span class="abbr" title="Nikki D Manuel">N D Manuel</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55285', ssrmeet: '55285' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55285">55285</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 111</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Nikki D Manuel"><span class="abbr" title="Nikki D Manuel">N D Manuel</span></abbr></td>
+<td class="default" align="center">17</td>
+<td class="default" align="center">3</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55758', ssrmeet: '55758' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55758">55758</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 111</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Edward T Meyer"><span class="abbr" title="Edward T Meyer">E T Meyer</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55771', ssrmeet: '55771' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55771">55771</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 111</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Edward T Meyer"><span class="abbr" title="Edward T Meyer">E T Meyer</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55774', ssrmeet: '55774' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55774">55774</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 111</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56248', ssrmeet: '56248' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56248">56248</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 111</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">15</td>
+<td class="default" align="center">5</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ENG 22 or ENG 24 or equivalent or higher with a grade of "C" or better and MATH 82 or equivalent or higher with a grade of "CR" or consent of instructor.<br><br>Students will be contacted by UH email by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55011', ssrmeet: '55011' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55011">55011</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 125</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Prerequisites: Placed in ENG 100 and MATH 103 placement or higher STEM; or consent of instructor.<br>Recommended preparation: ICS 100 or ICS 101.<br>Purchase of an online access code for course materials is required.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">PC Maintenance and Repair</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Alejandro A Ramos"><span class="abbr" title="Alejandro A Ramos">A A Ramos</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Prerequisites: Placed in ENG 100 and MATH 103 placement or higher STEM; or consent of instructor.<br>Recommended preparation: ICS 100 or ICS 101.<br>Purchase of an online access code for course materials is required.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55252', ssrmeet: '55252' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55252">55252</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 125</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: Placed in ENG 100 and MATH 103 placement or higher STEM; or consent of instructor.<br>Recommended preparation: ICS 100 or ICS 101.<br>Purchase of an online access code for course materials is required.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">PC Maintenance and Repair</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Alejandro A Ramos"><span class="abbr" title="Alejandro A Ramos">A A Ramos</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: Placed in ENG 100 and MATH 103 placement or higher STEM; or consent of instructor.<br>Recommended preparation: ICS 100 or ICS 101.<br>Purchase of an online access code for course materials is required.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55355', ssrmeet: '55355' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55355">55355</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 129</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>Access to a Windows PC with Internet access is required.<br>This section of ICS 129 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Databases</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Thomas D Burns"><span class="abbr" title="Thomas D Burns">T D Burns</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>Access to a Windows PC with Internet access is required.<br>This section of ICS 129 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55374', ssrmeet: '55374' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55374">55374</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 129</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>Access to a Windows PC with Internet access is required.<br>This section of ICS 129 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Databases</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Thomas D Burns"><span class="abbr" title="Thomas D Burns">T D Burns</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>Access to a Windows PC with Internet access is required.<br>This section of ICS 129 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55589', ssrmeet: '55589' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55589">55589</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 129</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Access to a Windows PC with Internet access is required.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Databases</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Thomas D Burns"><span class="abbr" title="Thomas D Burns">T D Burns</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Access to a Windows PC with Internet access is required.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55991', ssrmeet: '55991' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55991">55991</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 131</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- ssrmeet_array_length = 2 -->
+<!-- comment_text=Prerequisite: ICS 184 with a grade of C or better or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Virtualization</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Petersen W Gross"><span class="abbr" title="Petersen W Gross">P W Gross</span></abbr></td>
+<td class="default" align="center">3</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">T</td>
+<td nowrap="nowrap" CLASS="default">0900-<spacer />1015a</td>
+<td CLASS="default"><abbr title="Biological Science Room 107"><span class="abbr" title="Biological Science Room 107">BS 107</span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Prerequisite: ICS 184 with a grade of C or better or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55991', ssrmeet: '55991' -->
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56233', ssrmeet: '56233' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56233">56233</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 131</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Prerequisite: ICS 184 with a grade of C or better or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Intro to Virtualization</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Petersen W Gross"><span class="abbr" title="Petersen W Gross">P W Gross</span></abbr></td>
+<td class="default" align="center">15</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Prerequisite: ICS 184 with a grade of C or better or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55208', ssrmeet: '55208' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,FQ,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55208">55208</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 141</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0. <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: Placement in MATH 135 or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Disc Math for Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Michael J Bauer"><span class="abbr" title="Michael J Bauer">M J Bauer</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0. <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: Placement in MATH 135 or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55292', ssrmeet: '55292' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">FQ,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55292">55292</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 141</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0. <br>Prerequisites: Placement in MATH 135 or consent of instructor.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br> -->
+<td CLASS="default">Disc Math for Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Michael J Bauer"><span class="abbr" title="Michael J Bauer">M J Bauer</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="Cable TV "><span class="abbr" title="Cable TV ">CABLE </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0. <br>Prerequisites: Placement in MATH 135 or consent of instructor.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56245', ssrmeet: '56245' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,FQ,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56245">56245</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 141</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0. <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: Placement in MATH 135 or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Disc Math for Comp Sci I</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Michael J Bauer"><span class="abbr" title="Michael J Bauer">M J Bauer</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0. <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: Placement in MATH 135 or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55180', ssrmeet: '55180' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">DH,ETH,TXT0,WI</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55180">55180</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 170</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>Prerequisite: ENG 100 or equivalent with a grade of C or higher.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">WI-E-Ethics for Digital World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Tiffany W Akiyama"><span class="abbr" title="Tiffany W Akiyama">T W Akiyama</span></abbr></td>
+<td class="default" align="center">15</td>
+<td class="default" align="center">5</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>Prerequisite: ENG 100 or equivalent with a grade of C or higher.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55286', ssrmeet: '55286' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,DH,ETH</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55286">55286</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 170</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">E-Ethics for Digital World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Hong V Nguyen"><span class="abbr" title="Hong V Nguyen">H V Nguyen</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55522', ssrmeet: '55522' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,DH,ETH</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55522">55522</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 170</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>This section of ICS 170 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br> -->
+<td CLASS="default">E-Ethics for Digital World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="James J Arola"><span class="abbr" title="James J Arola">J J Arola</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>This section of ICS 170 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br><br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55636', ssrmeet: '55636' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,DH,ETH</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55636">55636</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 170</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">E-Ethics for Digital World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Eden Akins"><span class="abbr" title="Eden Akins">E Akins</span></abbr></td>
+<td class="default" align="center">17</td>
+<td class="default" align="center">3</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55788', ssrmeet: '55788' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">DH,ETH</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55788">55788</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 170</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This section of ICS 170 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">E-Ethics for Digital World</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="James J Arola"><span class="abbr" title="James J Arola">J J Arola</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+This section of ICS 170 will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55356', ssrmeet: '55356' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55356">55356</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 171</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>Prerequisite: ICS 184 with a C or better, or concurrent enrollment, or consent of the instructor. Recommended Preparation: ICS 170.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. pm. -->
+<td CLASS="default">Intro to Computer Security</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William M Albritton"><span class="abbr" title="William M Albritton">W M Albritton</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.<br>Prerequisite: ICS 184 with a C or better, or concurrent enrollment, or consent of the instructor. Recommended Preparation: ICS 170.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. pm.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55981', ssrmeet: '55981' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55981">55981</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 171</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Prerequisite: ICS 184 with a C or better, or concurrent enrollment, or consent of the instructor. Recommended Preparation: ICS 170.<br> -->
+<td CLASS="default">Intro to Computer Security</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William M Albritton"><span class="abbr" title="William M Albritton">W M Albritton</span></abbr></td>
+<td class="default" align="center">3</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TR</td>
+<td nowrap="nowrap" CLASS="default">1200-<spacer />0115p</td>
+<td CLASS="default"><abbr title="Biological Science Classroom 105"><span class="abbr" title="Biological Science Classroom 105">BS 105</span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.  <br>Prerequisite: ICS 184 with a C or better, or concurrent enrollment, or consent of the instructor. Recommended Preparation: ICS 170.<br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55982', ssrmeet: '55982' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55982">55982</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 171</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 184 with a C or better, or concurrent enrollment, or consent of the instructor. Recommended Preparation: ICS 170.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br> -->
+<td CLASS="default">Intro to Computer Security</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William M Albritton"><span class="abbr" title="William M Albritton">W M Albritton</span></abbr></td>
+<td class="default" align="center">15</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 184 with a C or better, or concurrent enrollment, or consent of the instructor. Recommended Preparation: ICS 170.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55151', ssrmeet: '55151' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55151">55151</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 184</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments.<br><br>Optional Synchronous meetings Thursdays 10:30-11:30 am. -->
+<td CLASS="default">Introduction to Networking</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Blanca J Polo"><span class="abbr" title="Blanca J Polo">B J Polo</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments.<br><br>Optional Synchronous meetings Thursdays 10:30-11:30 am.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55365', ssrmeet: '55365' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55365">55365</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 184</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments.<br><br>Optional Synchronous meetings Thursdays 10:30-11:30 am. -->
+<td CLASS="default">Introduction to Networking</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Blanca J Polo"><span class="abbr" title="Blanca J Polo">B J Polo</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $40.30 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments.<br><br>Optional Synchronous meetings Thursdays 10:30-11:30 am.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56211', ssrmeet: '56211' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56211">56211</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 184</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments. -->
+<td CLASS="default">Introduction to Networking</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Vincent W Lee"><span class="abbr" title="Vincent W Lee">V W Lee</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56246', ssrmeet: '56246' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56246">56246</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 184</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments. -->
+<td CLASS="default">Introduction to Networking</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Vincent W Lee"><span class="abbr" title="Vincent W Lee">V W Lee</span></abbr></td>
+<td class="default" align="center">17</td>
+<td class="default" align="center">3</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.<br>Students are required to have access to a personal computer, NOT a chromebook in order to complete the course assignments.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55159', ssrmeet: '55159' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55159">55159</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 211</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Prerequisite: ICS 111 with a grade of B or higher, or instructor consent.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>Optional synchronous meetings at the scheduled time, R 1:00-2:00pm. -->
+<td CLASS="default">Intro to Computer Sci II</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Blanca J Polo"><span class="abbr" title="Blanca J Polo">B J Polo</span></abbr></td>
+<td class="default" align="center">17</td>
+<td class="default" align="center">3</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Prerequisite: ICS 111 with a grade of B or higher, or instructor consent.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>Optional synchronous meetings at the scheduled time, R 1:00-2:00pm.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55369', ssrmeet: '55369' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55369">55369</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 211</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 with a grade of B or higher, or instructor consent.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>Optional synchronous meetings at the scheduled time, R 1:00-2:00pm.   You do not need cable television to take this class. -->
+<td CLASS="default">Intro to Computer Sci II</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Blanca J Polo"><span class="abbr" title="Blanca J Polo">B J Polo</span></abbr></td>
+<td class="default" align="center">16</td>
+<td class="default" align="center">4</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="Cable TV "><span class="abbr" title="Cable TV ">CABLE </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 with a grade of B or higher, or instructor consent.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>Optional synchronous meetings at the scheduled time, R 1:00-2:00pm.   You do not need cable television to take this class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55747', ssrmeet: '55747' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55747">55747</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 211</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Prerequisite: ICS 111 with a grade of B or higher, or instructor consent.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>Optional synchronous meetings at the scheduled time, R 1:00-2:00pm. -->
+<td CLASS="default">Intro to Computer Sci II</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Blanca J Polo"><span class="abbr" title="Blanca J Polo">B J Polo</span></abbr></td>
+<td class="default" align="center">16</td>
+<td class="default" align="center">4</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Prerequisite: ICS 111 with a grade of B or higher, or instructor consent.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. <br>Optional synchronous meetings at the scheduled time, R 1:00-2:00pm.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55253', ssrmeet: '55253' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55253">55253</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 212</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Prerequisite: ICS 211 with a grade of B or higher, or instructor consent.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Program Structure</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Edward T Meyer"><span class="abbr" title="Edward T Meyer">E T Meyer</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="Cable TV "><span class="abbr" title="Cable TV ">CABLE </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Prerequisite: ICS 211 with a grade of B or higher, or instructor consent.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55746', ssrmeet: '55746' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">&nbsp;</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55746">55746</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 212</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Prerequisite: ICS 211 with a grade of B or higher, or instructor consent.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Program Structure</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Edward T Meyer"><span class="abbr" title="Edward T Meyer">E T Meyer</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Prerequisite: ICS 211 with a grade of B or higher, or instructor consent.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55523', ssrmeet: '55523' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55523">55523</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 215</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Prerequisites: ICS 111 with a B or higher or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Scripting</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Edward T Meyer"><span class="abbr" title="Edward T Meyer">E T Meyer</span></abbr></td>
+<td class="default" align="center">19</td>
+<td class="default" align="center">1</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>Prerequisites: ICS 111 with a B or higher or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55984', ssrmeet: '55984' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55984">55984</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 215</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ICS 111 with a B or higher or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Scripting</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Edward T Meyer"><span class="abbr" title="Edward T Meyer">E T Meyer</span></abbr></td>
+<td class="default" align="center">15</td>
+<td class="default" align="center">5</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisites: ICS 111 with a B or higher or consent of instructor.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55983', ssrmeet: '55983' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55983">55983</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 231</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Prerequisite: ICS 111 with a grade of "C" or better, or concurrent enrollment, or instructor consent.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Linux</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">21</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>Prerequisite: ICS 111 with a grade of "C" or better, or concurrent enrollment, or instructor consent.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55985', ssrmeet: '55985' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55985">55985</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 231</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 with a grade of "C" or better, or concurrent enrollment, or instructor consent.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Introduction to Linux</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="William R Wright"><span class="abbr" title="William R Wright">W R Wright</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="Cable TV "><span class="abbr" title="Cable TV ">CABLE </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 with a grade of "C" or better, or concurrent enrollment, or instructor consent.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55181', ssrmeet: '55181' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">FQ,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55181">55181</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 241</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>Prerequisite: ICS 141 with a grade of "C" or higher, or instructor consent.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Disc Math for Comp Sci II</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Michael J Bauer"><span class="abbr" title="Michael J Bauer">M J Bauer</span></abbr></td>
+<td class="default" align="center">20</td>
+<td class="default" align="center">0</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="Cable TV "><span class="abbr" title="Cable TV ">CABLE </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.<br>Prerequisite: ICS 141 with a grade of "C" or higher, or instructor consent.<br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56207', ssrmeet: '56207' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">FQ,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56207">56207</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 241</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.<br>Prerequisite: ICS 141 with a grade of "C" or higher, or instructor consent.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Disc Math for Comp Sci II</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Michael J Bauer"><span class="abbr" title="Michael J Bauer">M J Bauer</span></abbr></td>
+<td class="default" align="center">18</td>
+<td class="default" align="center">2</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.<br>Prerequisite: ICS 141 with a grade of "C" or higher, or instructor consent.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55587', ssrmeet: '55587' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55587">55587</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 270</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 and ICS 129 each with a grade of "C" or better, or instructor consent.<br>Students are required to check their UH email for course correspondence before the first day of instruction. Contact the instructor (ramosa@hawaii.edu) for more information. Include the course title in the SUBJECT line of the email.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Synchronous meetings at scheduled time, W 12:00-1:15 pm (1 per week) -->
+<td CLASS="default">Systems Analysis</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Alejandro A Ramos"><span class="abbr" title="Alejandro A Ramos">A A Ramos</span></abbr></td>
+<td class="default" align="center">16</td>
+<td class="default" align="center">4</td>
+<td CLASS="default">W</td>
+<td nowrap="nowrap" CLASS="default">1200-<spacer />0115p</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 and ICS 129 each with a grade of "C" or better, or instructor consent.<br>Students are required to check their UH email for course correspondence before the first day of instruction. Contact the instructor (ramosa@hawaii.edu) for more information. Include the course title in the SUBJECT line of the email.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Synchronous meetings at scheduled time, W 12:00-1:15 pm (1 per week)
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '56254', ssrmeet: '56254' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">C19</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=56254">56254</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 270</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 and ICS 129 each with a grade of "C" or better, or instructor consent.<br>Students are required to check their UH email for course correspondence before the first day of instruction. Contact the instructor (ramosa@hawaii.edu) for more information. Include the course title in the SUBJECT line of the email.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Synchronous meetings at scheduled time, W 12:00-1:15 pm (1 per week) -->
+<td CLASS="default">Systems Analysis</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Alejandro A Ramos"><span class="abbr" title="Alejandro A Ramos">A A Ramos</span></abbr></td>
+<td class="default" align="center">10</td>
+<td class="default" align="center">10</td>
+<td CLASS="default">W</td>
+<td nowrap="nowrap" CLASS="default">1200-<spacer />0115p</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 111 and ICS 129 each with a grade of "C" or better, or instructor consent.<br>Students are required to check their UH email for course correspondence before the first day of instruction. Contact the instructor (ramosa@hawaii.edu) for more information. Include the course title in the SUBJECT line of the email.<br><br>This section will be participating in the Leeward Community College Bookstore's IDAP Program. An IDAP Rental Charge of $29.20 will be added to your MyUH account and you will access your digital course material through Laulima. If you have any questions, please contact the Leeward Community College Bookstore or visit the FAQ at http://www.bookstore.hawaii.edu/lcc/site_idap.asp. <br><br>Synchronous meetings at scheduled time, W 12:00-1:15 pm (1 per week)
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55986', ssrmeet: '55986' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55986">55986</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 273</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- ssrmeet_array_length = 2 -->
+<!-- comment_text=Textbook Cost: $0 <br>Prerequisite: ICS 184 with a grade of C or better or consent of instructor.  <br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Network Design and Admin</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Boris Bogaczewicz"><span class="abbr" title="Boris Bogaczewicz">B Bogaczewicz</span></abbr></td>
+<td class="default" align="center">10</td>
+<td class="default" align="center">10</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-03/04</td>
+</tr>
+<tr class="odd">
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">W</td>
+<td nowrap="nowrap" CLASS="default">0900-<spacer />1145a</td>
+<td CLASS="default"><abbr title="Biological Science Room 107"><span class="abbr" title="Biological Science Room 107">BS 107</span></abbr></td>
+<td CLASS="default">01/10-03/04</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0 <br>Prerequisite: ICS 184 with a grade of C or better or consent of instructor.  <br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55986', ssrmeet: '55986' -->
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55987', ssrmeet: '55987' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55987">55987</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 274</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- ssrmeet_array_length = 2 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Prerequisites: Earned a minimum grade of "C" in ICS-273, or concurrent, or instructor consent.  Students will be contacted by their instructor by email prior to the first day of class. -->
+<td CLASS="default">Adv Network Route Optimization</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Boris Bogaczewicz"><span class="abbr" title="Boris Bogaczewicz">B Bogaczewicz</span></abbr></td>
+<td class="default" align="center">10</td>
+<td class="default" align="center">10</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">03/07-05/06</td>
+</tr>
+<tr>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">&nbsp;</td>
+<td CLASS="default">W</td>
+<td nowrap="nowrap" CLASS="default">0900-<spacer />1145a</td>
+<td CLASS="default"><abbr title="Biological Science Room 107"><span class="abbr" title="Biological Science Room 107">BS 107</span></abbr></td>
+<td CLASS="default">03/07-05/06</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.  <br>Prerequisites: Earned a minimum grade of "C" in ICS-273, or concurrent, or instructor consent.  Students will be contacted by their instructor by email prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55987', ssrmeet: '55987' -->
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55370', ssrmeet: '55370' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55370">55370</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 281</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Prerequisite: ICS 170, ICS 171 and ICS 231 (formerly ICS 240) each with a grade of "C" or higher, or instructor consent.<br>Recommended preparation: ICS 184 & Be able to use the Linux Operating System.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Ethical Hacking</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Petersen W Gross"><span class="abbr" title="Petersen W Gross">P W Gross</span></abbr></td>
+<td class="default" align="center">1</td>
+<td class="default" align="center">9</td>
+<td CLASS="default">R</td>
+<td nowrap="nowrap" CLASS="default">0900-<spacer />1015a</td>
+<td CLASS="default"><abbr title="Biological Science Room 107"><span class="abbr" title="Biological Science Room 107">BS 107</span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>Prerequisite: ICS 170, ICS 171 and ICS 231 (formerly ICS 240) each with a grade of "C" or higher, or instructor consent.<br>Recommended preparation: ICS 184 & Be able to use the Linux Operating System.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55988', ssrmeet: '55988' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr>
+<td CLASS="default">TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55988">55988</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 281</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>Prerequisite: ICS 170, ICS 171 and ICS 231 (formerly ICS 240) each with a grade of "C" or higher, or instructor consent.<br>Recommended preparation: ICS 184 & Be able to use the Linux Operating System.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Ethical Hacking</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Petersen W Gross"><span class="abbr" title="Petersen W Gross">P W Gross</span></abbr></td>
+<td class="default" align="center">9</td>
+<td class="default" align="center">10</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="World Wide Web "><span class="abbr" title="World Wide Web ">WWW </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr>
+<td colspan="13">
+Textbook Cost: $0.  <br>Prerequisite: ICS 170, ICS 171 and ICS 231 (formerly ICS 240) each with a grade of "C" or higher, or instructor consent.<br>Recommended preparation: ICS 184 & Be able to use the Linux Operating System.<br><br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+<!-- sect_rec: i 'LEE', term: '202230', ssbsect_crn: '55371', ssrmeet: '55371' -->
+<!-- pt. a -->
+<!-- pt. b -->
+<!-- pt. c -->
+<!-- pt. d -->
+<!-- pt. e -->
+<!-- pt. f -->
+<!-- pt. g -->
+<tr class="odd">
+<td CLASS="default">C19,TXT0</td>
+<!-- pt. h -->
+<td CLASS="default"><a href="./avail.class?i=LEE&t=202230&c=55371">55371</a></td>
+<td nowrap="nowrap" CLASS="default">ICS 282</td>
+<td CLASS="default">0</td>
+<!-- ssrmeet_array_length = 0 -->
+<!-- ssrmeet_array_length = 1 -->
+<!-- comment_text=Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 170, ICS 171 and ICS 231 (formerly ICS 240) each with a grade of "C" or higher, or instructor consent.<br>Recommended preparation: ICS 184.<br><br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class. -->
+<td CLASS="default">Computer Forensics</td>
+<td CLASS="default">3</td>
+<td CLASS="default"><abbr title="Petersen W Gross"><span class="abbr" title="Petersen W Gross">P W Gross</span></abbr></td>
+<td class="default" align="center">12</td>
+<td class="default" align="center">8</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default">TBA</td>
+<td CLASS="default"><abbr title="Cable TV "><span class="abbr" title="Cable TV ">CABLE </span></abbr></td>
+<td CLASS="default">01/10-05/13</td>
+</tr>
+<tr class="odd">
+<td colspan="13">
+Textbook Cost: $0.  <br>This course meets the VA face-to-face requirement due to COVID-19.<br>Prerequisite: ICS 170, ICS 171 and ICS 231 (formerly ICS 240) each with a grade of "C" or higher, or instructor consent.<br>Recommended preparation: ICS 184.<br><br>Students do NOT need cable TV to take this course. Please contact the instructor for more information.<br>Students will be contacted at their UH email address by their instructor prior to the first day of class.
+</td>
+</tr>
+</table>
+<SPAN class="infotext"> <hr SIZE="1" WIDTH="100%">
+<table class="legend" cellpadding="0" cellspacing="0" border="0" width="100%">
+   <tr>
+      <td>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+         <tr>
+            <th colspan="6">General Education Requirements:</th>
+         </tr>
+         <tr>
+            <td><b>FGA</b></td>
+            <td width="33%">= Foundation GMP-A</td>
+            <td><b>DA</b></td>
+            <td width="33%">= Diversification-Arts</td>
+            <td><b>DP</b></td>
+            <td width="33%">= Diversification-Physical Science</td>
+         </tr>
+         <tr>
+            <td><b>FGB</b></td>
+            <td>= Foundation GMP-B</td>
+            <td><b>DB</b></td>
+            <td>= Diversification-Biological Science</td>
+             <td><b>DS</b></td>
+             <td>= Diversification-Social Science</td>
+         </tr>
+         <tr>
+            <td><b>FGC</b></td>
+            <td>= Foundation GMP-C</td>
+            <td><b>DH</b></td>
+            <td>= Diversification-Humanities</td>
+            <td><b>DY</b></td>
+            <td>= Diversification-Laboratory (science)</td>
+         </tr>
+         <tr>
+            <td><b>FQ</b></td>
+            <td>= Foundation Quantitative Reasoning</td>
+            <td><b>DL</b></td>
+            <td>= Diversification-Literatures</td>
+            
+         </tr>
+         <tr>
+            <td><b>FS</b></td>
+            <td>= Foundation Symbolic Reasoning</td>
+   
+         </tr>
+         <tr>
+            <td><b>FW</b></td>
+            <td>= Foundation Written Communication</td>
+      </table>
+     </td>
+  </tr>
+</table>
+</p> <hr SIZE="1" WIDTH="100%">
+<table class="legend" cellpadding="0" cellspacing="0" border="0" width="100%">
+   <tr>
+      <td>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+         <tr>
+            <th colspan="6">Focus Requirements:</th>
+         </tr>
+         <tr>
+            <td><b>ETH</b></td>
+            <td width="33%">= Contemporary Ethical Issues</td>
+            <td><b>HAP</b></td>
+            <td width="33%">= Hawaiian, Asian, and Pacific Issues</td>
+            <td><b>WI</b></td>
+            <td width="33%">= Writing Intensive</td>
+        <tr>
+            <td><b>OC</b></td>
+            <td>= Oral Communication</td>
+            
+      </table>
+     </td>
+  </tr>
+</table>
+</p> <p>
+<hr SIZE="1" WIDTH="100%">
+<table class="legend" cellpadding="0" cellspacing="0" border="0" width="50%">
+   <tr>
+      <td>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%"></tr>
+         <tr>
+            <th colspan="6">Special Designations:</th></tr><tr>
+            <td><b>ONLD</b></td>
+            <td width="33%">= Fully Online Program</td>
+            <td><b>SF</b></td>
+            <td width="33%">= Sustainability Focused</td>
+            <td><b>C19</b></td>
+            <td>= Online due to COVID-19</td></tr>
+         
+            <td><b>ONL5</b></td>
+            <td>= 5-Week Online Program</td>
+            <td><b>TXT0</b></td>
+            <td>= Textbook Cost $0</td>
+         </tr>
+     </table></table>
+</p>
+
+<p><strong><a href="https://docs.google.com/spreadsheets/d/1Q3cTFTom_C7JJpUBRFrIQawVmOvaPdr-K9kmTakoPi4/edit?usp=sharing" style="color:red;" target="_blank">LINK</a> to List of Classes by Requirement Designation.<strong></p>
+   </td>
+</tr>
+
+</table>
+  <p>
+<hr SIZE="1" WIDTH="100%">
+<table class="legend" cellpadding="0" cellspacing="0" border="0" width="50%">
+   <tr>
+      <td>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%"></tr>
+         <tr>
+            <th colspan="6">Class Meeting Days:</th></tr><tr>
+            <td><b>M</b></td>
+            <td width="33%">= Monday</td>
+            <td><b>R</b></td>
+            <td width="33%">= Thursday</td>
+            <td><b>U</b></td>
+            <td>= Sunday</td></tr>
+         
+            <td><b>T</b></td>
+            <td>= Tuesday</td>
+            <td><b>F</b></td>
+            <td>= Friday</td>
+             <td><b>TBA</b></td>
+             <td>= To Be Announced/Arranged</td>
+         </tr>
+         
+        <tr>    <td><b>W</b></td>
+            <td>= Wednesday</td>
+             <td><b>S</b></td><td width="33%">= Saturday</td></tr>
+
+     
+     </table></table>
+</p>
+
+</SPAN>
+<div class="footer">
+<hr SIZE="1" WIDTH="100%">
+<p class="copyright">&copy;2022 <a HREF="http://www.hawaii.edu/">University of Hawaii</a></p>
+<p class="updated">Updated: 02/02/2022 11:21:17 AM HST</p>
+</div>
+</body></html>
