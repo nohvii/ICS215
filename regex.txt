@@ -16,3 +16,7 @@ Sports Physical Therapy Case: 7, 13
 AMEX ^3[47][0-9]{13}$
 VISA ^4[0-9]{12}$|^4[0-9]{16}$
 ^5[1-6]\d{14}$|222[1-9]\d{12}$|2720\d{12}$
+
+Assignment 03
+regex:
+100<\/td>.+?<td class="default" align="center">\d{1,2}.+?<td class+="default" align="center">(\d{1,2})
