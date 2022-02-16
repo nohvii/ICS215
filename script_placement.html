@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML DOM and JavaScript</title>
+  <!--                        HTML DOM and JavaScript                       -->
+  <!--                           Author: Ed Meyer                           -->
+  <!-- This page demonstrates that the placement of the <script> does       -->
+  <!-- matter when trying to get an HTML element. Bare JavaScript is run    -->
+  <!-- when the browser reads the <script> tag. Ensure that when getting    -->
+  <!-- an HTML element, that element has already been added to              -->
+  <!-- the DOM tree. Otherwise, the getElementById will return null and no  -->
+  <!-- changes can be made to that HTML element.                            -->
+</head>
+<body>
+
+<input type="text" id="textDemo">
+<!-- Ensure this script tag is placed after the text input. -->
+<script type="text/javascript">
+  // Get the text input element to make some changes.
+  let demoElement = document.getElementById("textDemo");
+  // The changes will take affect immediately in the browser:
+  //   1) The text input will turn into a button.
+  //   2) The button will display "I am not a button now!"
+  demoElement.type = "button";
+  demoElement.value = "I am a button now!";
+</script>
+</body>
+</html>

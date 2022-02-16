@@ -20,3 +20,6 @@ VISA ^4[0-9]{12}$|^4[0-9]{16}$
 Assignment 03
 regex:
 100<\/td>.+?<td class="default" align="center">\d{1,2}.+?<td class+="default" align="center">(\d{1,2})
+
+5-65
+^6[0-5]$|^[1-5]\d$|^[5-9]$

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Assignment 01</title>
+  <!--          JavaScript Assignment 01          -->
+  <!-- Use JavaScript to change HTML elements.    -->
+</head>
+
+<body>
+
+Write directly on the page the value of the following text input: <br>
+<input type="text" id="assignmentText" name="assignmentText" value="Shamwow!">
+<script type="text/javascript">
+  let textValue = document.getElementById("assignmentText");
+  document.write(textValue.value);
+</script>
+<br>
+<br>
+
+Change the text of the button to <strong>Click Me!</strong><br>
+<input type="button" id="assignmentButton" name="assignmentButton" value="Press Me!">
+<script type="text/javascript">
+  document.getElementById("assignmentButton").value = "Click Me!";
+</script>
+<br>
+<br>
+
+Ensure this checkbox is already checked when the page loads:<br>
+<input type="checkbox" id="assignmentCheckbox1" name="assignmentCheckbox1"> Already Checked!
+<script type="text/javascript">
+  let myCheckbox1 = document.getElementById("assignmentCheckbox1");
+  myCheckbox1.setAttribute('checked', true);
+</script>
+<br>
+<br>
+
+Enter Name: <input type="checkbox" id="assignmentCheckbox2" name="assignmentCheckbox2">
+<script type="text/javascript">
+  let myCheckbox2 = document.getElementById("assignmentCheckbox2");
+  myCheckbox2.setAttribute('type', 'text');
+  myCheckbox2.setAttribute('id','inputName');
+  myCheckbox2.setAttribute('name','inputName');
+  myCheckbox2.setAttribute('placeholder', 'Enter Name Here');
+</script>
+</body>
+</html>
