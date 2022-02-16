@@ -20,8 +20,7 @@ my $myFile = "sp22_ics_availability.html";
 my $seatsTotal = 0;
 
 # terminates the script if the user does not enter exactly 1 argument
-# NOTE: I'm using two new lines because my to space out the output!
-die "Error: Expecting 1 program argument, found " . @ARGV . " instead.\nUsage: Perl BacligFrederick04.pl course_number\n\n" if (@ARGV != 1);
+die "Error: Expecting 1 program argument, found " . @ARGV . " instead.\nUsage: Perl BacligFrederick04.pl course_number\n" if (@ARGV != 1);
 
 # continutes the script and stores the argument into a variable
 # we will use to match a specific course number
@@ -45,10 +44,10 @@ close inFH;
 $/ = "\n";
 
 # terminate the script if no matches are found
-die "No courses matched.\n\n" if ($fileContents !~ m#<td nowrap=\"nowrap\" CLASS=\"default\">ICS\s$courseArg</td>#);
+die "No courses matched.\n" if ($fileContents !~ m#<td nowrap=\"nowrap\" CLASS=\"default\">ICS\s$courseArg</td>#);
 
 # script will continue running if a match was found
-# The while loop implemented here to iterate through file matching the regex 
+# The while loop implemented here to iterate through the matches. 
 # for seats available
 # G and S flags are used for matching the contents of the file
 while ($fileContents =~ m#$courseArg<\/td>.+?<td class=\"default\" align=\"center\">\d{1,2}.+?<td class=\"default\" align=\"center\">(\d{1,2})#gs){
@@ -58,3 +57,4 @@ while ($fileContents =~ m#$courseArg<\/td>.+?<td class=\"default\" align=\"cente
 
 # Print the seats total available for the course
 print "$seatsTotal\n\n";
+print "Program Done\n";
