@@ -3,16 +3,20 @@
 <head>
 <meta charset="utf-8">
 <title>JavaScript Assignment 01</title>
-  <!--          JavaScript Assignment 01          -->
-  <!-- Use JavaScript to change HTML elements.    -->
+  <!--          
+    JavaScript Assignment 01        
+    To get practice using JavaScript to get and make changes to HTML elements 
+    Author: Frederick Baclig
+  -->
 </head>
-
 <body>
 
 Write directly on the page the value of the following text input: <br>
 <input type="text" id="assignmentText" name="assignmentText" value="Shamwow!">
 <script type="text/javascript">
+  //storing the textbox element to variable textValue
   let textValue = document.getElementById("assignmentText");
+  //write the value directly to the webpage
   document.write(textValue.value);
 </script>
 <br>
@@ -21,6 +25,7 @@ Write directly on the page the value of the following text input: <br>
 Change the text of the button to <strong>Click Me!</strong><br>
 <input type="button" id="assignmentButton" name="assignmentButton" value="Press Me!">
 <script type="text/javascript">
+  //changes attribute value of the button to click me
   document.getElementById("assignmentButton").value = "Click Me!";
 </script>
 <br>
@@ -29,7 +34,9 @@ Change the text of the button to <strong>Click Me!</strong><br>
 Ensure this checkbox is already checked when the page loads:<br>
 <input type="checkbox" id="assignmentCheckbox1" name="assignmentCheckbox1"> Already Checked!
 <script type="text/javascript">
+  //storing the textbox element to variable myCheckBox1
   let myCheckbox1 = document.getElementById("assignmentCheckbox1");
+  //Set the attribute of the checkbox to true/checked
   myCheckbox1.setAttribute('checked', true);
 </script>
 <br>
@@ -37,11 +44,17 @@ Ensure this checkbox is already checked when the page loads:<br>
 
 Enter Name: <input type="checkbox" id="assignmentCheckbox2" name="assignmentCheckbox2">
 <script type="text/javascript">
+  //storing the checkbox element to a variable for easier use.
   let myCheckbox2 = document.getElementById("assignmentCheckbox2");
+  //sets the attribute type to text
   myCheckbox2.setAttribute('type', 'text');
+  //sets the attribute id to inputName
   myCheckbox2.setAttribute('id','inputName');
+  //sets the attribute name to inputName
   myCheckbox2.setAttribute('name','inputName');
+  //sets the attribute placeholder to Enter Name Here
   myCheckbox2.setAttribute('placeholder', 'Enter Name Here');
 </script>
 </body>
 </html>
+
