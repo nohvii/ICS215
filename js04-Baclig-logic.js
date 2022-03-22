@@ -20,3 +20,20 @@ document.voterapp.addEventListener("submit", function(eventParam) {
     return;
   }
 });
+
+document.voterapp.useMailAddress.addEventListener("click", function() {
+
+  if(document.voterapp.useMailAddress.checked) {
+    document.voterapp.resAddress1.value = document.voterapp.address1.value;
+    document.voterapp.resAddress2.value = document.voterapp.address2.value;
+    document.voterapp.resCity.value = document.voterapp.city.value;
+    document.voterapp.resState.value = document.voterapp.state.value;
+    document.voterapp.resZip.value = document.voterapp.zip.value;
+  } else {
+    document.voterapp.resAddress1.value = "";
+    document.voterapp.resAddress2.value = "";
+    document.voterapp.resCity.value = "";
+    document.voterapp.resState.value = "";
+    document.voterapp.resZip.value = "";
+  }
+});
