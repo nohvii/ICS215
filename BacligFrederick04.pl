@@ -47,14 +47,14 @@ $/ = "\n";
 die "No courses matched.\n" if ($fileContents !~ m#<td nowrap=\"nowrap\" CLASS=\"default\">ICS\s$courseArg</td>#);
 
 # script will continue running if a match was found
-# The while loop implemented here to iterate through file matching the regex 
+# The while loop implemented here to iterate through the matches. 
 # for seats available
 # G and S flags are used for matching the contents of the file
-while ($fileContents =~ m#$courseArg<\/td>.+?<td class=\"default\" align=\"center\">\d{1,2}.+?<td class+=\"default\" align=\"center\">(\d{1,2})#gs){
+while ($fileContents =~ m#$courseArg<\/td>.+?<td class=\"default\" align=\"center\">\d{1,2}.+?<td class=\"default\" align=\"center\">(\d{1,2})#gs){
   # Running total of seats available for each course
   $seatsTotal = $seatsTotal + $1;
 }
 
 # Print the seats total available for the course
 print "$seatsTotal\n\n";
-print "Program Done";
+print "Program Done\n";
