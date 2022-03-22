@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Voter Registration Application</title>
+<!--                JavaScript Assignment 04                -->
+<!--  Modified version of Voter Registration Application    -->
+<!--  found on the back page of the State ID Application.   -->
+<!--                 Modified by: Ed Meyer                  -->
+<link type="text/css" href="https://laulima.hawaii.edu/x/SCbYv6" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+<header>
+<h1>Hawaii Voter Registration Application</h1>
+<h2>(Modified, not for official use)</h2>
+</header>
+<form name="voterapp" method="post">
+<strong>Section I. </strong>Failure to complete certain items will prevent acceptance of this application.<br>
+1. State ID Number: <input type="text" name="idNum" id="idNum"> <br>
+2. Date of Birth (mm/dd/yyyy): <input type="date" name="dob" id="dob"> <br>
+3. Last Name: <input type="text" name="lastname" id="lastname"> First Name: <input type="text" name="firstname" id="firstname"> Middle, Suffix: <input type="text" name="initial" id="initial"> <br>
+4. Mailing Address: <br>
+Address Line 1: <input type="text" id="address1" name="address1"> <br>
+Address Line 2: <input type="text" id="address2" name="address2"> <br>
+City: <input type="text" id="city" name="city"> State: <input type="text" id="state" name="state"> ZIP Code: <input type="text" id="zip" name="zip"><br>
+5. Hawaii Principal Residence Address <br>
+Use same as Mailing Address: <input type="checkbox" name="useMailAddress" id="useMailAddress"> <br>
+Address Line 1: <input type="text" id="resAddress1" name="resAddress1"> <br>
+Address Line 2: <input type="text" id="resAddress2" name="resAddress2"> <br>
+City: <input type="text" id="resCity" name="resCity"> State: <input type="text" id="resState" name="resState"> ZIP Code: <input type="text" id="resZip" name="resZip"><br>
+6. Contact Phone: <input type="text" id="phone" name="phone"> <br>
+
+<br>
+
+<strong>Section II.</strong> Qualifications <br>
+If you answer "No" to any of the questions below, DO NOT complete this form. <br>
+Are you a citizen of the United States of America? <input type="radio" name="amCitizen" id="amCitizenYes" value="yes"> Yes <input type="radio" name="amCitizen" id="amCitizenNo" value="no"> No <br>
+Are you at least 16 years of age? (Must be 18 to vote) <input type="radio" name="ageToVote" id="ageToVoteYes" value="yes"> Yes <input type="radio" name="ageToVote" id="ageToVoteNo" value="no"> No <br>
+Are you a resident of the State of Hawaii? <input type="radio" name="amResident" id="amResidentYes" value="yes"> Yes <input type="radio" name="amResident" id="amResidentNo" value="no"> No <br>
+
+<br>
+
+<strong>Section III.</strong> I hereby affirm that: 1) I am the person named above; and 2) all information furnished on this application is true and correct.
+<input type="checkbox" id="affirm" name="affirm" value="affirmation"> <br>
+<br>
+<div class="center"><input type="submit" id="submit" name="submit" value="Submit"></div>
+</form>
+<!-- Import your js04-Lastname-logic.js file here. -->
+</div>
+</body>
+</html>

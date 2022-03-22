@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>ICS 215 JavaScript 04</title>
+<link href="https://laulima.hawaii.edu/access/content/user/emeyer/ics/215/labfiles_css.css" rel="stylesheet" type="text/css">
+<style>
+  .darkRed {
+    color: #900;
+  }
+</style>
+</head>
+
+<body>
+<div id="container">
+<header>
+  <h1>~ JavaScript Assignment 04 ~</h1>
+</header>
+
+<div id="content">
+  <ul>
+    
+    
+    <li><strong>Working with a Partner</strong>
+      <ul>
+        <li>For this assignment you may work in pairs, include the name of the person you worked with in your JavaScript file.</li>
+        <li>Both you and your partner  submits the same code, different filenames, but the same code inside.</li>
+      </ul>
+    </li>
+    <li><strong>Objectives</strong>
+      <ul>
+        <li>Work with HTML forms.</li>
+        <li>Use JavaScript to validate data entry and provide feedback to the user using alerts.</li>
+        </ul>
+    </li>
+    <li><strong>Instructions</strong>
+      <ul>
+        <li>Download the HTML file <a href="./HI_voter_application.html" target="_blank">HI_voter_application.html</a>. 
+          <ul>
+            
+            <li>To download the file, right-click the link above &gt; Save link as...</li>
+            <li>Note that there are some dependencies in the file that require Internet access to view properly in the browser. It is formatting that is hosted on my Laulima account.</li>
+            </ul>
+        </li>
+        <li>The HTML document contains a form that is an adaptation of Hawaii's voter registration application. The form is separated into 3 sections. You will be adding a submit event to the form to perform form validations as well as adding a click event to one of the checkboxes.</li>
+        <li>Change the filename to <strong>sp22_voter_application_lastname.html</strong>, where lastname is your own last name.        </li>
+        <li>Open <strong>sp22_voter_application_lastname.html </strong>in Atom to make changes and in a browser to view those changes.
+          <ul>
+            <li>Do NOT remove or modify the existing  HTML unless there is an error on the page itself that prevents you from completing the assigment. Please ask if you are not sure.</li>
+            </ul>
+          </li>
+        <li>Take a moment to familiarize yourself with the form, it's input elements, along with the names and ids.</li>
+        <li>At the bottom of the HTML document, indicated by an HTML comment, use a script tag to import an external JavaScript file named <strong>js04-Lastname-logic.js</strong>, where Lastname is your last name.</li>
+        <li>Save <strong>sp22_voter_application_lastname.html</strong>. There will be no more modifications to this file.</li>
+        <li>Create a new file and save it as<strong> js04-Lastname-logic.js</strong>, where Lastname is your last name.
+          <ul>
+            <li>Ensure this file is saved in the same folder as your <strong>sp22_voter_application_lastname.html</strong> file.</li>
+            <li>This JavaScript file will contain all the Javascript for the page.        </li>
+          </ul>
+        </li>
+        <li><strong>Form Validation Information</strong><br>
+          <ul>
+            <li>ALL validations are performed in  one submit event handler function. The validations are categorized by section, but ALL validations are performed in the one submit event handler function.</li>
+            <li>Prevent the form from submitting if there are any errors.</li>
+            <li>Use an alert to let the user know that there is erroneous data entry.
+              <ul>
+                <li><strong>Chrome/Edge Users:</strong> Ignore the [Violation] 'submit' handler message in the browser console that occurs when the alert pops up.</li>
+                <li><strong>Firefox Users:</strong> Ignore the encoding message in the browser console &quot;The character encoding of the HTML document was not declared.&quot; It will not affect the assignment.</li>
+              </ul>
+            </li>
+            <li>If there is something wrong with the form when the user clicks on the Submit button, the alert will show. If there are multiple things wrong with the form, still only show 1 alert with 1 error. Let the user fix the error and  click the Submit again. If there are more errors, then another alert with the next error should be displayed. Repeat until there are no errors and the form submits.              </li>
+            <li>This is similar to the bd-form example from the lectures. </li>
+          </ul>        
+        <li><strong>Implement Form Validation</strong></li>
+        <ul>
+          <li>Add a <strong>submit</strong> event with an event object paramenter, to the voterapp form and perform the following validations:<br>
+            <ul>
+              <li><strong>Section I Validations           </strong>
+                <ol>
+                  <li>Ensure the State ID Number <strong>only</strong> accepts input in the pattern:
+<ul>
+                      <li>Starts with an uppercase S, followed by 8 uppercase letters or digits.</li>
+                      <li>Example: <span class="in-line-code">SA1234567</span>, <span class="in-line-code">S12345678</span>, <span class="in-line-code">S55555555</span>, <span class="in-line-code">SABCDEFGH</span>, <span class="in-line-code">S1A2B3C4D</span></li>
+                      <li>Alert error message: &quot;ID Number Error: Must start with an S followed by 8 uppercase letters or digits.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>Date of Birth cannot be blank.              
+                    <ul>
+                      <li>Alert error message: &quot;Error: Please enter your date of birth.&quot;</li>
+                      <li>Hint: Check if the length of the value is 0.</li>
+                      </ul>
+                    </li>
+                  <li>Last name cannot be blank. 
+                    <ul>
+                      <li>Alert error message: &quot;Error: Last name cannot be blank.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>First name cannot be blank. 
+                    <ul>
+                      <li>Alert error message: &quot;Error: First name cannot be blank.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>Mailing Address Line 1  cannot be blank. 
+                    <ul>
+                      <li>Alert error message: &quot;Error: Address Line 1 cannot be blank.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>Mailing City cannot be blank.
+                    <ul>
+                      <li>Alert error message: &quot;Error: City cannot be blank.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>Mailing State cannot be blank.              
+                    <ul>
+                      <li>Alert error message: &quot;Error: State cannot be blank.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>Mailing ZIP code <strong>must</strong> be a Hawaii ZIP code that also accepts the optional 4 digit extension:
+<ul>
+                      <li>5 digits that start with 967 or 968 <strong>OR</strong> 5 digits that start with 967 or 968 followed by a -, followed by 4 digits.</li>
+                      <li>Example formats: 967XX, 968XX, 967XX-XXXX, 968XX-XXXX, where X are digits.</li>
+                      <li>Alert error message: &quot;Error: ZIP code is not a Hawaii ZIP code.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>There are no validations associated with the residence address.</li>
+                  <li>Ensure the contact phone number <strong>only</strong> accepts input in the pattern:
+<ul>
+                      <li><span class="in-line-code">000-000-0000</span> or <span class="in-line-code">0000000000</span></li>
+                      <li>3 digits, followed by a -, followed by 3 digits, followed by a -, followed by 4 digits.</li>
+                      <li>Or 10 digits</li>
+                      <li>Example: <span class="in-line-code">123-456-7890</span> or <span class="in-line-code">1234567890</span></li>
+                      <li>Alert error message: &quot;Error: Please enter a phone number in the form 000-000-0000 or 0000000000.&quot;</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </li>
+              <li><strong>Section II Validations           </strong>
+                <ol>
+                  <li>Ensure the user chooses an answer to the citizen question.              
+                    <ul>
+                      <li>Alert error message: &quot;Error: Please answer if you are a citizen of the United States of America.&quot;</li>
+                      <li>Hint: Use the same approach as the Male / Female example from the bd-form.</li>
+                      </ul>
+                    </li>
+                  <li>Ensure the user chooses an answer to  being at least 16 years of age.              
+                    <ul>
+                      <li>Alert error message: &quot;Error: Please answer if you are at least 16 years of age.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>Ensure the user chooses an answer to being a resident of Hawaii.
+                    <ul>
+                      <li>Alert error message: &quot;Error: Please answer if you are a resident of the State of Hawaii.&quot;</li>
+                      </ul>
+                    </li>
+                  <li>If the user answers No to any of the questions, alert error message: &quot;Error: You do not qualify to register to vote.&quot;
+                    <ul>
+                      <li>In other words, if amCitizenNo is checked, or ageToVoteNo is checked, or amResidentNo is checked, then it is an error.</li>
+                      <li>Hint: Use document.getElementById to get each of the &quot;No&quot; radio buttons and use the .checked property to see if it was checked.</li>
+                      </ul>
+                    </li>
+                </ol>
+                </li>
+              <li><strong>Section III</strong>
+                <strong>Validations</strong>
+<ol>
+  <li>Ensure the &quot;affirmation&quot; <strong>checkbox</strong> is checked.
+                  </li>
+              </ol>
+                <ul>
+                  <ul>
+                    <li>Alert error message: &quot;Please check the affirmation in Section III to submit your application.&quot;              </li>
+                  </ul>
+                </ul>
+              </li>
+              </ul>
+          </li>
+          
+          <li>When the form passes all validations, show an alert telling the user <strong>&quot;Thank You! Your application will be submitted.&quot;</strong></li>
+        </ul>          
+          <li><strong>Behavior Information</strong>            
+            <ul>
+              <li>You will need to get the HTML element and define the event handler function for the behavior.</li>
+              <li>Be careful not to add behaviors inside the submit event handler function. You may want to add a comment noting where the code for the submit event ends so you do not define a behavior inside it.</li>
+            </ul>
+          </li>
+          <li><strong>Implement Behaviors</strong>
+          </li>
+      </ul>
+      <ul>
+        <ul>
+          <li><strong>Section I</strong></li>
+          </ul>
+        <ul>
+          <ol>
+            <li>Add a <strong>click</strong> event to the Use same as Mailing Address checkbox so that when the user checks it, the address, city, state, and ZIP from the mailing address are copied to the corresponding address, city, state, and ZIP in the residence address. Only perform the copy when the checkbox is checked. If the user unchecks the checkbox, then nothing should happen.</li>
+            </ol>
+          <li><strong>Section II</strong>
+            <ol>
+              <li>None</li></ol></li>
+          
+          <li><strong>Section III</strong>
+            <ol>
+              <li>None          </li></ol>
+          </li>
+        </ul>
+        <li>Comment all JavaScript you create.</li>
+      </ul>
+    </li>
+    
+    <li><strong>Videos of interacting with the form</strong>
+      <ul>
+        <li><a href="https://laulima.hawaii.edu/access/content/user/emeyer/ics/215/lectures/javascript/06/voter-application-filling.mp4" target="_blank">Demonstrating filling out the application</a></li>
+        <li><a href="https://laulima.hawaii.edu/access/content/user/emeyer/ics/215/lectures/javascript/06/voter-use-same-as-mailing.mp4" target="_blank">Demonstrating Use same as Mailing Address checkbox    </a></li>
+      </ul>
+    </li>
+    <li><strong>Grading</strong>
+      <ul>
+        <li>If any aspect of the page does not work, it will result in 0 points for that graded item.</li>
+      </ul>
+    </li>
+    <li><strong>Submission Guidelines</strong>
+      <ul>
+        <li>Submit your <strong>sp22_voter_application_lastname.html</strong> and<strong> js04-Lastname-logic.js </strong>to the Digital Dropbox.
+          <ul>
+            <li>Be sure to check your hawaii.edu e-mail for confirmation of your submission.</li>
+          </ul>
+        </li>
+        <li>Due Date: Tuesday, Mar. 29 by 11:55pm</li>
+      </ul>
+    </li>
+  </ul> 
+  </div>
+
+<footer>
+&nbsp;
+</footer>
+
+</div>
+</body>
+</html>
