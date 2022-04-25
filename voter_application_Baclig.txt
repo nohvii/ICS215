@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Voter Registration Application</title>
+<!--                   PHP Assignment 01                    -->
+<!--        Modified version of HI Voter Application        -->
+<!--                 Modified by: Fred Baclig                -->
+<link type="text/css" href="https://laulima.hawaii.edu/x/SCbYv6" rel="stylesheet">
+<style>
+  .error {
+    color: #A00;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div id="container">
+<header>
+<h1>Hawaii Voter Registration Application</h1>
+<h2>(Modified, not for official use)</h2>
+</header>
+<form name="voterapp" method="get" action="voter_application_Baclig.php">
+<strong>Section I. </strong>Failure to complete certain items will prevent acceptance of this application.<br>
+<label for="idNum" <?php
+  //Uses regex to validate ID and creates a inline error if the
+  if (isset($_GET['submit']) && (!preg_match("/^S[A-Z0-9]{8}$/", $_GET['idNum']))) 
+    //appends the error class when requirements arent met for ID 
+    echo 'class="error"'; 
+?>> 1. State ID Number:</label>
+<input type="text" name="idNum" id="idNum" value="<?php if (isset($_GET['submit'])) echo $_GET['idNum'];?>">
+
+<?php 
+//Creates in line error message stating what the ID requirements are 
+  if (isset($_GET['submit']) && (!preg_match("/^S[A-Z0-9]{8}$/", $_GET['idNum']))) 
+    echo '<span class="error"> State ID Number must start with an uppercase S, followed by 8 uppercase letters or digits</span>';
+?><br>
+<label for="dob">2. Date of Birth (mm/dd/yyyy):</label>
+<input type="date" name="dob" id="dob" value="<?php /* sticy for DOB */ if (isset($_GET['submit'])) echo $_GET['dob'];?>"> <br>
+3. Last Name: <input type="text" name="lastname" id="lastname" value="<?php /* sticy for last name */ if (isset($_GET['submit'])) echo $_GET['lastname'];?>">
+First Name: <input type="text" name="firstname" id="firstname" value="<?php /* sticy for first name */ if (isset($_GET['submit'])) echo $_GET['firstname'];?>">
+Middle, Suffix: <input type="text" name="initial" id="initial" value="<?php /* sticy for initial  */  if (isset($_GET['submit'])) echo $_GET['initial'];?>"> <br>
+4. Mailing Address: <br>
+Address Line 1: <input type="text" id="address1" name="address1" value="<?php /* sticy for address 1*/ if (isset($_GET['submit'])) echo $_GET['address1'];?>"> <br>
+Address Line 2: <input type="text" id="address2" name="address2" value="<?php /* sticy for address 2 */  if (isset($_GET['submit'])) echo $_GET['address2'];?>"> <br>
+City: <input type="text" id="city" name="city" value="<?php if /* sticy for city */ (isset($_GET['submit'])) echo $_GET['city'];?>">
+State: <input type="text" id="state" name="state" value="<?php /* sticy for state */ if (isset($_GET['submit'])) echo $_GET['state'];?>">
+ZIP Code: <input type="text" id="zip" name="zip" value=""><br>
+5. Hawaii Principal Residence Address <br>
+Use same as Mailing Address: <input type="checkbox" name="useMailAddress" id="useMailAddress" <?php /* sticy for use mailing checkbox */  if (Isset($_GET['useMailAddress'])) echo "checked"; ?>> <br>
+Address Line 1: <input type="text" id="resAddress1" name="resAddress1" value="<?php /* sticy for resident address 1 */  if (isset($_GET['submit'])) echo $_GET['resAddress1'];?>"> <br>
+Address Line 2: <input type="text" id="resAddress2" name="resAddress2" value="<?php /* sticy for resident addres 2 */  if (isset($_GET['submit'])) echo $_GET['resAddress2'];?>">" <br>
+City: <input type="text" id="resCity" name="resCity" value="<?php /* sticy for resident city */  if (isset($_GET['submit'])) echo $_GET['resCity'];?>">
+State: <input type="text" id="resState" name="resState" value="<?php /* sticy for resident state */  if (isset($_GET['submit'])) echo $_GET['resState'];?>">
+ZIP Code: <input type="text" id="resZip" name="resZip" value="<?php /* sticy for resident zipcode */  if (isset($_GET['submit'])) echo $_GET['resZip'];?>"><br>
+<label for="phone" <?php /*Validates the proper format for phone is met using regex */ if (isset($_GET['submit']) && (!preg_match("/^\d{3}-\d{3}-\d{4}$|^\d{10}$/", $_GET['phone']))) echo 'class="error"';?>>6. Contact Phone:</label>
+<input type="text" id="phone" name="phone" value="<?php /*if requirement for phone is not met, a in line error message is created */ if (isset($_GET['submit'])) echo $_GET['phone']; ?>"><?php if (isset($_GET['submit']) && (!preg_match("/^\d{3}-\d{3}-\d{4}$|^\d{10}$/", $_GET['phone']))) echo '<span class="error"> Please enter a phone number in the form 000-000-0000 or 0000000000.</span>';?>
+
+<br>
+<br>
+
+<strong>Section II.</strong> Qualifications <br>
+If you answer "No" to any of the questions below, DO NOT complete this form. <br>
+Are you a citizen of the United States of America?
+<!-- the following is a sticy for the are you a citizen, legal age to vote, and Hawaii residence radio boxes -->
+<input type="radio" name="amCitizen" id="amCitizenYes" value="yes" <?php if (isset($_GET['amCitizen']) && $_GET['amCitizen'] == "yes") echo 'checked="checked"';?>> Yes
+<input type="radio" name="amCitizen" id="amCitizenNo" value="no" <?php if (isset($_GET['amCitizen']) && $_GET['amCitizen'] == "no") echo 'checked="checked"';?>> No <br>
+Are you at least 16 years of age? (Must be 18 to vote)
+<input type="radio" name="ageToVote" id="ageToVoteYes" value="yes"<?php if (isset($_GET['ageToVote']) && $_GET['ageToVote'] == "yes") echo 'checked="checked"';?>> Yes
+<input type="radio" name="ageToVote" id="ageToVoteNo" value="no"<?php if (isset($_GET['ageToVote']) && $_GET['ageToVote'] == "no") echo 'checked="checked"';?>> No <br>
+Are you a resident of the State of Hawaii?
+<input type="radio" name="amResident" id="amResidentYes" value="yes"<?php if (isset($_GET['amResident']) && $_GET['amResident'] == "yes") echo 'checked="checked"';?>> Yes
+<input type="radio" name="amResident" id="amResidentNo" value="no"<?php if (isset($_GET['amResident']) && $_GET['amResident'] == "no") echo 'checked="checked"';?>> No <br>
+
+<br>
+
+<label for="affirm" <?php /* If user does not check the affirmation box, the error style class is added*/ if (isset($_GET['submit']) && (!isset($_GET['affirm']))) echo 'class="error"'; ?>> <strong>Section III.</strong> I hereby affirm that: 1) I am the person named above; and 2) all information furnished on this application is true and correct.</label>
+<input type="checkbox" id="affirm" name="affirm" value="affirmation" <?php /*sticky for affirm checkbox */ if (isset($_GET['affirm'])){ echo "checked";} ?>> <br>
+<br>
+<div class="center"><input type="submit" id="submit" name="submit" value="Submit"></div>
+</form>
+</div>
+</body>
+</html>
